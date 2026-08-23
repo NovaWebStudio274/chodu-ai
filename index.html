@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chodu Ai</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://js.puter.com/v2/"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">M</div>
+            <div>
+                <h1>Chodu Ai</h1>
+                <span>Just talk.</span>
+            </div>
+        </div>
+
+        <button id="newChatBtn" class="new-chat">
+            <span>＋</span>
+            New Chat
+        </button>
+
+        <div class="conversation-title">CHATS</div>
+
+        <div id="chatList" class="chat-list"></div>
+
+        <div class="sidebar-bottom">
+            <div class="usage">
+                <div class="usage-top">
+                    <span>Free messages</span>
+                    <span id="usageText">0 / 15</span>
+                </div>
+
+                <div class="usage-bar">
+                    <div id="usageFill"></div>
+                </div>
+            </div>
+
+            <div class="founder">
+                <strong>Chodu Ai</strong>
+                <span>Founded by Raza Saifi</span>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <button id="mobileMenu" class="mobile-menu">☰</button>
+
+            <div class="model-info">
+                <div class="status-dot"></div>
+                <div>
+                    <strong>Chodu AI</strong>
+                    <small>Bakchodi 4.6</small>
+                </div>
+            </div>
+
+            <button id="clearBtn" class="clear-btn">
+                Clear
+            </button>
+
+        </header>
+
+
+        <section id="chat" class="chat">
+
+            <div id="welcome" class="welcome">
+
+                <div class="welcome-logo">M</div>
+
+                <h2>Bol bhai.</h2>
+
+                <p>
+                    Yahan formal AI wali bakchodi nahi.
+                    Jo bolna hai bol.
+                </p>
+
+                <div class="suggestions">
+
+                    <button class="suggestion">
+                        Aaj kya scene hai?
+                    </button>
+
+                    <button class="suggestion">
+                        Mujhe roast kar
+                    </button>
+
+                    <button class="suggestion">
+                        Kuch interesting bata
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div id="limitScreen" class="limit-screen hidden">
+
+            <div class="limit-card">
+
+                <div class="limit-icon">15</div>
+
+                <h2>Bas bhai, quota khatam.</h2>
+
+                <p>
+                    Free preview ke 15 messages use ho gaye.
+                    Baaki features coming soon.
+                </p>
+
+                <div class="coming-soon">
+                    COMING SOON
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <footer class="composer-area">
+
+            <div class="composer">
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Bhok Lavde..."
+                    rows="1"
+                ></textarea>
+
+                <button id="sendBtn" class="send-btn">
+                    ↑
+                </button>
+
+            </div>
+
+            <div class="composer-note">
+                Chodu Ai can make mistakes. Keep the bakchodi responsible.
+            </div>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
